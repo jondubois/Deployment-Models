@@ -1,10 +1,10 @@
 # 1. Pulling the docker images we need
-FROM node:5.11.0
+FROM python:2.7
 MAINTAINER Stephen Rodriguez <@stephnr>
 
 # 2. Labelling the docker image version/details
 LABEL version="1.0"
-LABEL description="Simple NodeJS Dockerfile. Executes `npm start` to run your app"
+LABEL description="Simple Python 2.x Dockerfile. Executes `fab start` to run your app"
 
 ###################################
 ######      SETUP STACK      ######
@@ -17,13 +17,13 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # 6. Provide Environment Properties
-ENV NODE_ENV=production
+# ENV ...
 
 # 7. Copy project files into the application folder
 COPY . /usr/src/app
 
 # 8. Install Dependencies (not devDependencies)
-RUN npm install
+RUN pip install --no-cache-dir -r requirements.txt
 
 # 9. Your Custom Build Steps
 # {{ CUSTOM BUILD STEPS GO HERE }}
@@ -40,4 +40,4 @@ EXPOSE 80
 ###############################
 
 # 11. Run the application specific build/run commands
-CMD [ "node", "start" ]
+CMD [ "fab", "start" ]
