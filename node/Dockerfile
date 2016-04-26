@@ -41,4 +41,4 @@ EXPOSE 80
 ###############################
 
 # 11. Run the application specific build/run commands
-CMD [ "foreman", "start" ]
+CMD [ "node", "start" ]
