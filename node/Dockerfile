@@ -24,7 +24,6 @@ ENV NODE_ENV=production
 COPY . /usr/src/app
 
 # 8. Install Dependencies
-COPY package.json /usr/src/app
 RUN npm install --production
 
 # 9. Your Custom Build Steps
