@@ -4,7 +4,7 @@ MAINTAINER Stephen Rodriguez <@stephnr>
 
 # 2. Labelling the docker image version/details
 LABEL version="1.0"
-LABEL description="Simple Python 2.x Dockerfile. Executes `fab start` to run your app"
+LABEL description="Simple Ruby Dockerfile. Executes `rake` to run your app"
 
 ###################################
 ######      SETUP STACK      ######
