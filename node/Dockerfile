@@ -27,7 +27,7 @@ COPY . /usr/src/app
 RUN npm install --production
 
 # 9. Your Custom Build Steps
-{{ CUSTOM BUILD STEPS GO HERE }}
+# {{ CUSTOM BUILD STEPS GO HERE }}
 
 ###################################
 ######      EXPOSE PORT      ######
