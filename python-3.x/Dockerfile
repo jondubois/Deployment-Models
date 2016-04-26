@@ -1,5 +1,5 @@
 # 1. Pulling the docker images we need
-FROM python:3.5
+FROM python:3.5.1
 MAINTAINER Stephen Rodriguez <@stephnr>
 
 # 2. Labelling the docker image version/details

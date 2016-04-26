@@ -1,5 +1,5 @@
 # 1. Pulling the docker images we need
-FROM python:2.7
+FROM python:2.7.11
 MAINTAINER Stephen Rodriguez <@stephnr>
 
 # 2. Labelling the docker image version/details
